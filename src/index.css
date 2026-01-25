@@ -1,1 +1,110 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Pretendard/Pretendard-Thin.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Pretendard/Pretendard-ExtraLight.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Pretendard/Pretendard-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Pretendard/Pretendard-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Pretendard/Pretendard-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Pretendard/Pretendard-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Pretendard/Pretendard-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Pretendard/Pretendard-ExtraBold.woff2') format('woff2');
+}
+
+@layer base {
+  html {
+    font-family:
+      'Pretendard',
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      sans-serif;
+  }
+}
+
+@theme {
+  --color-api-red: 249 62 62;
+  --color-api-blue: 97 175 254;
+  --color-api-yellow: 252 161 48;
+  --color-api-green: 73 204 144;
+
+  --color-bg-blue: 126 177 204;
+  --color-bg-yellow: 210 180 82;
+  --color-bg-red: 222 138 121;
+  --color-bg-green: 0 161 87;
+
+  --color-gray-50: 245 245 245;
+  --color-gray-100: 229 229 229; /* E5E5E5 */
+  --color-gray-200: 228 228 228; /* E4E4E4 */
+  --color-gray-300: 210 210 210;
+  --color-gray-400: 186 186 186;
+  --color-gray-500: 162 162 162; /* A2A2A2 */
+  --color-gray-600: 151 151 151; /* 979797 */
+  --color-gray-700: 120 120 120;
+  --color-gray-800: 90 90 90;
+  --color-gray-900: 40 40 40;
+
+  --shadow-base: 0 0px 4px rgb(0 0 0 / 0.25);
+  --shadow-blue: 0 0px 6px rgb(97 175 254);
+  --shadow-light: 0 0px 10px rgb(229 229 229);
+}
+
+@layer components {
+  .screen-center {
+    @apply flex min-h-screen flex-col items-center;
+  }
+}
