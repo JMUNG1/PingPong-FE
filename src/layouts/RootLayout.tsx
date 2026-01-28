@@ -5,7 +5,7 @@ export default function RootLayout() {
   return (
     <>
       <Header />
-      <main className='pt-16'>
+      <main>
         <Outlet />
       </main>
     </>
